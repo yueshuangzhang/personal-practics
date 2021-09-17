@@ -1,0 +1,159 @@
+/* Specificity 
+1. inline
+2. id
+3. class
+4. type, ie h1
+
+
+*/
+
+/* For id s */
+#top_heading {
+    background-color: blanchedalmond;
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    margin: 50px;
+    }
+
+#text {
+    border: 2px solid black;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#temp_record {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+/* For class */
+.heading {
+    color: blue;
+}
+
+.special {
+    color: aquamarine;
+}
+
+
+/* For regular tag */
+td, th {
+    border: 1px solid blue;
+    padding: 5px;
+}
+
+h2 {
+    color: blueviolet; 
+    text-align: center;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    background-color: green;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+ul {
+    font-size: 14px;
+    color: red;
+}
+
+/* the list item within the unordered list 
+within the ordered list
+
+Descedant >
+
+*/
+ol > ul > li { 
+    color:blue
+}
+
+/* Attribute */
+a { /*Without*/
+    color: blue;
+}
+
+a[href="https://amazon.com"] { /*With*/
+    color:rgb(221, 88, 88);
+}
+
+
+/* Make the webpage responsive 
+   ie. Change the color of the page according to the page width
+   
+   if width >= 700: red
+   if width <= 699: blue
+*/
+
+@media (min-width: 700px){
+    #vptest {
+        color: red;
+    }
+
+    #hidetest {
+        visibility: visible;
+    }
+}
+
+@media (max-width: 699px) {
+    #vptest {
+        color: blue;
+    }
+    #hidetest {
+        visibility: hidden;
+    }
+}
+
+/* Flex box, style to wrap around if space not enough*/
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container > div {
+    background-color: beige;
+    font-size: 20px;
+    padding: 20px;
+    margin:5px;
+    width: 200px;
+}
+
+#grid {
+    background-color: green;
+    display: grid;
+    padding: 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    grid-template-columns: 200px 200px auto;
+}
+
+.grid-item{
+    background-color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+
+/* We can use "Boothstrap" to select/use some style written*/
+
+
+/* Variable styling - normally when changing color for
+both list from red, there are 2 modifications to make 
+*/
+#variable > ol {
+    font-size: 18px;
+    color: red;
+}
+
+#variable > ul {
+    font-size: 14px;
+    color: red;
+}
+
