@@ -1,0 +1,43 @@
+#Logo {
+    text-align: center;
+    font-family:'Arial';
+    color: green
+}
+#form_cont {
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+#search_bar {
+    position:relative;
+    width: 70%;
+    float: center;
+    border-radius: 25px;
+    border: 1px lightgray solid;
+    text-indent: 8px;
+    outline: none;
+    font-size: 110%;
+}
+
+#search_but {
+    position: relative;
+    float: center;
+    border: 1px transparent;
+    border-radius: 25px;
+    font-size: 110%;
+
+}
+
+#form_but {
+    position: relative;
+    float: center;
+    right: 32px;
+    outline: none;
+    cursor: pointer;
+    border: none transparent;
+    background-color: transparent;
+    color: darkgray;
+    font-size: 110%;
+}
+

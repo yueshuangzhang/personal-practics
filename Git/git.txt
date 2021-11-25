@@ -1,0 +1,43 @@
+# Creat a file
+touch hello.html
+
+# Add to the comit list
+add hello.html
+
+# comit
+git comit -m "Message"
+
+# Checking local version of the repository
+git status
+
+# Add and commit
+git comit -am "Message"
+
+
+# update to github
+git push
+
+# update from github
+git pull
+
+# Merge conflict:
+<<< HEAD
+Local changes pushing up
+=======
+Remote changes on github
+>>>
+
+# All the comit made, who, message, time
+git log
+
+# Reset to a old version
+git reset
+git reset --hard <comit>
+git reset --hard origin/master
+
+
+
+
+
+
+
