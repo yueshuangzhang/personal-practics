@@ -35,6 +35,25 @@ git reset
 git reset --hard <comit>
 git reset --hard origin/master
 
+# Branching - working on different part of the project
+git branch # what branch im on
+git checkout master
+git checkout -b xxx #create the branch xxx,
+
+# Merge - combine all part together
+git merge xxx #and probably remove the conflict
+#then comit again
+
+# github
+# forking a repository ie Bootstrap
+# then submit a pull request - to keep the repository safe
+
+# github pages - deploy
+#create a repo username.github.io
+# or manually turn on github page
+
+
+
 
 
 
